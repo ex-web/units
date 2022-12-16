@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.abs-units {
+  outline: 1px solid #DDD;
+  margin: 10px;
+}
+
+
+.abs-units div { 
+    position: relative;
+    margin: 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.cm {
+  width: 10cm;
+  background: pink;
+}
+
+.cm::before {
+    content: '10cm'
+}
+
+.mm {
+  width: 100mm;
+  background: palegoldenrod;
+}
+
+.mm::before {
+    content: '100mm = 10cm'
+}
+
+.in {
+  width: 3.937in;
+  background: palegreen;
+}
+.in::before {
+    content: '3.937in = 10cm';
+}
+
+.q {
+  width: 400q;
+  background: paleturquoise;
+} 
+.q::before {
+    content: '400q = 10cm'
+}
+
+.rel-units div { 
+  position: relative;
+  margin: 10px 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+
+.rel-units p {
+  text-align: center;
+  color: gray
+}
+
+.vw {
+  width: 100vw;
+  background: plum;
+} 
+
+.vw::before {
+    content: '100vw - столько твоё окно браузера по горизонтали'
+}
+
+.vh {
+  width: 100vh;
+  background: MistyRose;
+} 
+
+.vh::before {
+    content: '100vh - столько твоё окно браузера по вертикали'
+}
